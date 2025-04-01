@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="AnyScene">
+        content="Dyna">
   <!-- <meta name="keywords" content="Virtual Try-on, Customizable Generation, Diffusion Model"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AnyScene</title>
+  <title>DynaScene</title>
 
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -59,7 +59,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">AnyScene: Camera-controllable Video Background Generation</h1>
+          <h1 class="title is-1 publication-title">DynaScene: Camera-controllable Video Background Generation</h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               Zhengze Xu<sup>1 <sup> </a>&nbsp</a>&nbsp  
@@ -140,7 +140,7 @@
                 <h2 class="title is-3" style="text-align: center;">Architecture</h2>
                   <div class="content has-text-justified">
                     <p>
-                      We explore generating novel background given the original human video and a reference scene image. The challenge lies in the following two folds: first, the generated background should strictly match the camera movements of the human foreground. Second, novel content should appear seamlessly when the camera is turned to different directions. Accordingly, we formulate a new task termed camera-controllable video background generation and propose our solution, AnyScene. Specifically, we extract the camera poses from the original video as the control signal to guide the background movements. Besides, we design a multi-task learning paradigm that involves multiple agent tasks (i.e., background outpainting and scene variation) to enhance the reality of the generated backgrounds. Considering the sparsity of suitable data, we construct a high quality dataset tailored for this task, including video foregrounds, scene images, and corresponding camera poses.
+                      In this paper, we investigate the generation of new video backgrounds given a human foreground video, a camera pose, and a reference scene image. This task presents three key challenges. First, the generated background should precisely follow the camera movements corresponding to the human foreground. Second, as the camera shifts in different directions, newly revealed content should appear seamless and natural. Third, objects within the video frame should maintain consistent textures as the camera moves to ensure visual coherence. To address these challenges, we propose DynaScene, a new framework that uses camera poses extracted from the original video as an explicit control to drive background motion. Specifically, we design a multi-task learning paradigm that incorporates auxiliary tasks, namely background outpainting and scene variation, to enhance the realism of the generated backgrounds. Given the scarcity of suitable data, we constructed a large-scale, high-quality dataset tailored for this task, comprising video foregrounds, reference scene images, and corresponding camera poses. This dataset contains 200K video clips, ten times larger than existing real-world human video datasets, providing a significantly richer and more diverse training resource.
                     </p>
                   </div>
                 <div class="columns is-centered has-text-centered">
